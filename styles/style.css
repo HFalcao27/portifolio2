@@ -18,10 +18,21 @@ body {
 .principal {
     background-image: url("../assets/Background.png");
     background-repeat: no-repeat; /*Para não deixa a imagem com reflexo no site principal.*/
-    background-size: contain;
+    background-size: contain; /*pra preencher*/
+    
 }
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%; /*Literlamente divide a tela em 50%. */
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em; /*Para dar uma borda no botão.*/
+    color: var(--branco-principal);
+    display: block;
 }
 
