@@ -19,10 +19,12 @@ body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então
     font-weight: 400;
 }
 
-.principal {
+.principal { /*Depois tentar enteder porque ela fez isso aqui.*/
     background-image: url("../assets/Background.png");
     background-repeat: no-repeat; /*Para não deixa a imagem com reflexo no site principal.*/
     background-size: contain; /*pra preencher*/
+    align-items: center;
+    text-align: center; /*Nesse caso além de centralizar os textos maiores, também centralizou os textos dos botões*/
     
 }
 
@@ -32,9 +34,17 @@ body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então
     grid-template-columns: 50% 50%; /*Literlamente divide a tela em 50%. */
 }
 
-.container__titulo{
+.container__caixa {
+    margin: 0 6em; /*o primeiro valor é o topo e embaixo, segundo valor são as laterais. Diferente do outro exemplo que tem 4 valores. O que isso quer dizer que tem varias maneiras de resolver essa situação.*/
+}
+
+.container__titulo {
     font-size: 28px;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /*Primeiro cima, segundo direito, terceira o de baixo, quarto o da esquerda.*/
 }
 
 .container__botao {
@@ -44,6 +54,7 @@ body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
+    margin-bottom: 1em; /*SEPAROU OS BOTÕES*/
 }
 
 .botao__secundario {
@@ -56,4 +67,25 @@ body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então
     font-size: 12px;
     color: var(--cinza-secundario);
 }
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
 
