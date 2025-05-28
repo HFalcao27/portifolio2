@@ -88,4 +88,12 @@ body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então
     color: var(--cinza-secundario);
 }
 
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
 
