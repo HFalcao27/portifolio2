@@ -4,6 +4,7 @@
     --botao-azul:#167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-azul-efeito: #b2d2f9;
 }
 
 * {
@@ -57,6 +58,11 @@ body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então
     margin-bottom: 1em; /*SEPAROU OS BOTÕES*/
 }
 
+.container__botao:hover{ /*MUDAR A COR QUANDO PASSA O MOUSE/ PSEUDO CLASSE*/
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
 .botao__secundario {
 
     background-color: transparent;
@@ -96,4 +102,76 @@ body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então
 .container__descricao {
     padding: 2em;
 }
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*Tira os pontos da lista.*/
+    margin: 3em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+
+}
+
+.rodape {
+    text-align: center;
+    padding: 6em;
+  
+}
+
+.rodape__logo {
+    padding: 1em;
+
+}
+
+.rodape__lista {
+
+    padding :1em;
+    display: flex;
+
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 300;
+    list-style-type: none;
+
+}
+
+.lista__link a{ /*Porque foi adicionado esse a?*/
+    padding: 1em;
+    margin-left: 1em;
+    text-decoration: none;
+    display: flex;
+    color: var(--branco-principal);
+}
+
+.lista__link a:hover{ /* pra quando passar o mouse em cima mudar de cor. ISSO É UMA VARIAVEL*/
+    color:var(--botao-azul)
+}
+
+.lista__link a:active{ /*Quando aperta o botão com o mouse mudar de cor. ISSO É UMA VARIAVEL*/
+    color: purple;
+}
+
+.rodape__texto {
+    
+    padding: 1em;;
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+
 
