@@ -3,6 +3,7 @@
     --cinza-secundario:#C0C0C0;
     --botao-azul:#167BF7;
     --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
 }
 
 * {
@@ -10,9 +11,12 @@
     padding: 0;
 }
 
-body {
+body { /*Foi adicionado tudo isso no body, porque o body é pai de todos. Então tudo isso vai para os filhos dele.*/
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .principal {
@@ -28,11 +32,28 @@ body {
     grid-template-columns: 50% 50%; /*Literlamente divide a tela em 50%. */
 }
 
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
 .container__botao {
     background-color: var(--botao-azul);
     border-radius: 5px;
     padding: 1em; /*Para dar uma borda no botão.*/
     color: var(--branco-principal);
     display: block;
+    text-decoration: none;
+}
+
+.botao__secundario {
+
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
 }
 
